@@ -1,0 +1,5 @@
+node_modules
+*.sublime-*
+public/js/bundle.js
+public/js/vendor
+public/templates/tbundle.html

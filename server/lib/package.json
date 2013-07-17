@@ -1,0 +1,12 @@
+{
+  "name": "sundries",
+  "version": "0.0.0",
+  "description": "",
+  "main": "sundries.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
