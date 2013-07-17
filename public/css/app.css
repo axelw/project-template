@@ -1,0 +1,309 @@
+/*** Twitter Bootstrap tweaks ***/
+
+/* stop views from changing their vertical position 
+when the window is narrowed horizontically */
+.navbar-fixed-top {
+    margin:0 0 10px;
+}
+
+.navbar .brand
+{
+  font-weight: 100;
+  background: url(../img/showcase48.png) no-repeat left center;
+  height: 26px;
+  width: 128px;
+  text-align: right;
+  padding: 10px;
+  margin-left: 0px;
+}
+
+/* position:relative in .navbar-fixed-top would effectively disable 'fixed' NavBar.
+To keep the 'fixed' effect for desktop screen sizes, and at the same time prevent 
+the view's jumping up and down while resizing the screen, following media-queries exist.
+Note that relative scroll positions haven't been taken into account */
+@media (min-width: 980px) { /*and (max-width: 1199px) {*/
+    /* bootstrap tweak: keep logo at position */
+    .navbar .brand {
+        padding: 10px;
+        margin-left: 20px;
+    }
+    .spacekeeper{
+        padding-top:60px;
+    }
+}
+
+@media (max-width: 979px) {
+    .spacekeeper{
+        padding-top:0px;
+    }
+}
+
+/* stop navbars from growing vertically when the window is narrowed horizontically */
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
+    padding:0;
+    padding-left:10px;   /*keep leftmost item 10px away from screen edge*/ 
+}
+
+/* preventing whitespace left and right */
+.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top{  
+    margin-left:-20px;
+    margin-right:-20px;
+}
+
+/* whiten navbar */
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+       -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.navbar-inner {
+    background-color: #fff;
+    background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+    background-repeat: repeat-x;
+    border: 0px solid ##ffffff;
+    -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='##ffffff', GradientType=0);
+    *zoom: 1;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+}
+/* whiten navbar end */
+
+/*.nav-pills > li:hover {
+  text-shadow:0 0px 0 rgba(0,0,0,0);
+  background-color: #5a96cd;
+}
+*/
+
+.navbar .nav .nav-pill-button > li > a,
+.nav-pill-button > li > a{
+    background-color: #f0f0f0;
+}
+
+.navbar .nav > li > a{
+    font-weight:200;
+}
+
+.navbar .nav > li > a:hover,
+.nav-pill-button > li > a:hover{
+    color: #fff;  
+    text-shadow:0 0px 0 rgba(0,0,0,0);
+    background-color: #5e8fbd;
+}
+
+.nav-tabs > li > a, .nav-pills > li > a {
+    line-height:20px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+body {
+    /* this works together with setting the navbar's margins to a corresponding negative value */
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/*** Twitter Bootstrap tweaks end ***/
+
+/*** 404 ***/
+
+
+/*** 404 end ***/
+
+/*** Other ***/
+footer {
+  font-size:11px;
+  color: #ddd;
+  display:none;
+}
+/*** Other end ***/
+
+
+
+
+
+.vcard {
+    font-size:18px;
+}
+
+.vcard .details dt{
+    font-size: 12px;
+    font-weight:200;
+}
+
+.profile-form form
+{
+    border-radius:4px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.075);
+    padding: 1px;
+}
+
+.profile-form-header
+{
+    position:relative;
+    /*padding:10px 20px;*/
+    padding-left:20px;
+    margin:0;
+    color:#fff;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+    background-color:#245b9b;
+    background-image:-moz-linear-gradient(#628ebb, #245b9b);
+    background-image:-webkit-linear-gradient(#628ebb, #245b9b);
+    background-image:linear-gradient(#628ebb, #245b9b);
+    background-repeat:repeat-x;
+    border:1px solid #6e8290;
+    border-bottom-color:#586873;
+    border-radius:4px 4px 0 0
+}
+
+.profile-form-header h1
+{
+    font-weight: 200;  
+    font-size:18px;
+    margin: 0px;
+}
+
+
+.profile-form-body
+{
+    padding:20px;
+    padding-right: 30px;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    font-size:14px;
+    background-color:#fff;
+    border:1px solid #d8dee2;
+    border-top-color:white;
+    border-radius:0 0 4px 4px
+}
+
+.profile-form-body .input-block
+{
+/*
+  margin-top:5px;
+  margin-bottom:15px
+*/
+}
+
+
+
+
+
+.auth-form form
+{
+  border-radius:4px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.075);
+  padding: 1px;
+}
+.auth-form-header
+{
+  position:relative;
+  padding:0px 20px;
+  margin:0;
+  color:#fff;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+/*  background-color:#6c8393;
+  background-image:-moz-linear-gradient(#7f95a5, #6c8393);
+  background-image:-webkit-linear-gradient(#7f95a5, #6c8393);
+  background-image:linear-gradient(#7f95a5, #6c8393);
+*/
+/* tweak */
+/*  background-color:#245b9b;
+  background-image:-moz-linear-gradient(#628ebb, #245b9b);
+  background-image:-webkit-linear-gradient(#628ebb, #245b9b);
+  background-image:linear-gradient(#628ebb, #245b9b);
+*//* tweak end */  
+background-color:#245b9b;
+  background-image:-moz-linear-gradient(#1e5f9a, #85abce);
+  background-image:-webkit-linear-gradient(#1e5f9a, #85abce);
+  background-image:linear-gradient(#1e5f9a, #85abce);
+  background-repeat:repeat-x;
+  border:1px solid #6e8290;
+  border-bottom-color:#586873;
+  border-radius:4px 4px 0 0
+}
+.auth-form-header h1
+{
+/* tweak */    
+/*  font-weight: 200;  
+  font-size:18px;
+*/  font-size: 16px;
+  font-weight: 100;
+
+/* tweak end */    
+  margin: 0px;
+}
+.auth-form-header h1 a
+{
+  color:#fff;
+}
+/*.auth-form-header .octicon
+{
+  position:absolute;
+  right:0;
+  top:12px;
+  right:10px;
+  color:rgba(0,0,0,0.4);
+  text-shadow:0 1px 0 rgba(255,255,255,0.1)
+}*/
+.auth-form-body
+{
+  padding:20px;
+  padding-right: 30px;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  font-size:14px;
+  background-color:#fff;
+  border:1px solid #d8dee2;
+  border-top-color:white;
+  border-radius:0 0 4px 4px
+}
+.auth-form-body .input-block
+{
+  margin-top:0px;
+  margin-bottom:20px
+}
+.auth-form-body p.small_notice
+{
+  display:inline;padding:0 10px
+}
+.auth-form-subheading
+{
+  margin:0
+}
+.auth-form-body p
+{
+  margin:0 0 0px
+}
+.auth-form-permissions
+{
+  padding-bottom:20px;
+  margin-bottom:20px;
+  border-bottom:1px solid #d8dee2
+}
+.auth-form-permissions li
+{
+  list-style-position:inside;
+  padding-left:15px
+}
+.auth-form .note
+{
+  margin:15px 0;
+  color:#777;
+  text-align:center
+}
+
+.input-block
+{
+  display:block;
+  width:100%
+}
